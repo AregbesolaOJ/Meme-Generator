@@ -1,0 +1,41 @@
+.gallery {
+    width: 26%;
+    text-align: center;
+    border: 1px solid #c3cfe2;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    height: 150px;
+    background-color: #ffffff;
+}
+.gallery img {
+    height: 80px;
+    width: 100%;
+}
+.gallery p {
+    margin-top: 10px;
+    font-size: 12px;
+    font-style: italic;
+}
+a {
+    color: #c3c;
+}
+
+@media (min-width: 1024px) {
+    .gallery {
+        width: 20%;
+        padding: 5px 10px;
+        height: 300px;
+    }
+    .gallery img {
+        height: 180px;
+        width: 100%;
+    }
+    .gallery p {
+        font-size: 16px;
+    }
+}
