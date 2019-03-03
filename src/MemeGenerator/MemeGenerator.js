@@ -20,7 +20,6 @@ class MemeGenerator extends React.Component {
             .then(response => response.json())
             .then(response => response.data)
             .then(data => {
-                console.log(data.memes)
                 const memes = data.memes;
                 this.setState({
                     allMemeImages: memes
@@ -81,7 +80,6 @@ class MemeGenerator extends React.Component {
                            name="topText"
                            placeholder="Top Text" 
                            onChange={this.handleChange} 
-                           required
                     />
 
                     <input type="text" 
